@@ -518,10 +518,6 @@
         element.classList.toggle('show');
     }
 
-    function toggleAboutUs() {
-        var aboutUs = document.getElementById('about-us');
-        aboutUs.classList.toggle('show');
-    }
 
     function filterRecipes() {
         var input, filter, items, h3, i, txtValue;
@@ -531,11 +527,6 @@
         for (i = 0; i < items.length; i++) {
             h3 = items[i].getElementsByTagName("h3")[0];
             txtValue = h3.textContent || h3.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                items[i].style.display = "about-us";
-            } else {
-                items[i].style.display = "about-us";
-            }
         }
     }
 </script>
